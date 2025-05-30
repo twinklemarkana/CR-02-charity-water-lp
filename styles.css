@@ -17,3 +17,99 @@ Fonts:
 - Avenir
 
 */
+
+/* The body styles set the default font and background for the page */
+body {
+  /* Set the background image for the whole page */
+  background-image: url('img/bkgnd img.jpg'); /* Use your image from the img folder */
+  background-size: cover; /* Make the image cover the whole page */
+  background-position: center; /* Center the image */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+    .hero {
+      background-image: url('img/bkgnd img.jpg'); /* Replace with your own image */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      position: relative;
+      text-align: left;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      /*max-width: 600px;*/
+      padding: 0px;
+      padding-left: 10px; /* Move content closer to the left edge */
+      text-align: left; /* Align all text and elements to the left */
+    }
+
+    /* Add a white background bar behind the logo image from left to right edge */
+.logo {
+  position: absolute; /* Place the logo in a fixed spot */
+  top: 0px;          /* Distance from the top of the page */
+  left: 0;            /* Start at the very left edge */
+  width: 100vw;       /* Make the background stretch across the whole page */
+  background: #fff;   /* White background */
+  z-index: 10;        /* Make sure the logo stays on top */
+  padding: 10px 10px 10px 20px; /* Add some space above, below, and to the left of the image */
+  box-sizing: border-box; /* Make sure padding doesn't add to the width */
+}
+
+    /* Style for the logo image */
+.logo-img {
+  /* Makes the logo image smaller and aligns it with the text */
+  height: 32px;           /* Sets the image height */
+  vertical-align: middle; /* Aligns image with text */
+  margin-right: 0;        /* No extra space needed since there's no text */
+}
+
+    h1 {
+      font-size: 3.5em;
+      color: #ffcc00;
+      margin-bottom: 20px;
+      text-align: left; /* Make sure heading is left aligned */
+      font-family: Proxima Nova; /* Use Proxima Nova for heading and button */
+    }
+
+    p {
+      font-size: 1.5em;
+      line-height: 1.5;
+      text-align: left; /* Make sure paragraph is left aligned */
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #ffcc00;
+      color: #000;
+      padding: 5px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 30px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      text-align: center; /* Make sure button text is left aligned */
+      font-family: Proxima Nova; /* Use Proxima Nova for heading and button */
+      font-size: 1.5em;
+    }
+
+    .btn:hover {
+      background-color: #e6b800;
+    }
